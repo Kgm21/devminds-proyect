@@ -19,3 +19,38 @@ main {
     background-color: #cfcfcf;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+/*menu*/
+
+
+
+
+/*pantalla grande*/
+@media (min-width: 992px)  {
+
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-toggler[aria-expanded="true"] + .collapse {
+        display: block;
+    }
+}
+
+/*pantalla mediana*/
+@media (min-width: 768px) and (max-width: 991px){
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-toggler[aria-expanded="true"] + .collapse {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-toggler[aria-expanded="true"] + .collapse {
+        display: block;
+    }
+  }
