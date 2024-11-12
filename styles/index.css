@@ -1,7 +1,21 @@
-/* header {
-    height: 00px;
-} */
+header {
+    height: 80vh;
+}
 
 main {
     height: 100vh;
+}
+
+/* .ancho {
+    width: 40%;
+    padding: 0,50,0,50;
+} */
+
+.sombra {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);;
+}
+
+.cambios:hover {
+    background-color: #cfcfcf;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
