@@ -13,48 +13,41 @@
 </head>
 <body>
     <header>
-        <nav class="navbar  bg-transparent border-body p-4" data-bs-theme="dark">
-            <section class="container-fluid">
-                <a class="navbar-brand ms-5" href="./index.html">
-                    <img src="./assets/img/DevMinds Short.jpg" alt="logo de la pagina" class="logo" width="150px" />
-                </a>
-                <button class="sombra navbar-toggler text-black" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span>Menu</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ancho">
-                        <ul class="navbar-nav text-center p-2 align-items-center">
-                            <form class="d-flex" role="search">
-                                <input class="sombra form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                                <button class="sombra btn btn-secondary rounded-pill" type="submit">BUSCAR</button>
-                            </form>
-                            <li class="nav-item p-2 w-25">
-                                <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">INICIO</a>
-                            </li>
-                            <li class="nav-item p-2 w-25">
-                                <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">PRODUCTOS</a>
-                            </li>
-                            <li class="nav-item p-2 w-25">
-                                <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">CARRITO DE COMPRAS</a>
-                            </li>
-                            <li class="nav-item p-2 w-25">
-                                <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">SOBRE NOSOTROS</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gap-4 d-flex justify-content-center ms-3">
-                        <button class="sombra btn btn-secondary rounded-pill me-2" type="button">
-                            LOGIN
-                        </button>
-                        <button class="sombra btn btn-secondary rounded-pill me-2" type="button">
-                            SIGN UP
-                        </button>
-                    </div>
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid p-0 justify-content-between">
+                <a class="navbar-brand logo" href="#"><img src="./assets/img/DevMinds_logo_pngColor.png" alt=""width="150px" ></a>
+                <div class="d-flex align-items-center ">
+                  <button type="button" class="btn  me-2 " id="login">Login in</button>
+                  <button type="button" class="btn  me-2 " id="sigin">Sign in</button>
+                  <button class="btn btn-link navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                 </div>
-            </section>
-        </nav>
+             
+              
+              <div class="collapse navbar-collapse menu_desplegable m-0 mt-1 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mb-lg-0 align-items-center">
+                  <form class="d-flex mt-2 " role="search">
+                    <input class="sombra form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                    <button class="sombra btn btn-secondary rounded-pill" type="submit">BUSCAR</button>
+                  </form>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">INICIO</a>
+                  </li>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">CARRITO DE COMPRAS</a>
+                  </li>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">SOBRE NOSOTROS</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section>
