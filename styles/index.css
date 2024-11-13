@@ -39,20 +39,20 @@ main {
   }
   
   #login:hover {
-    background-color: #f0f0f0; /* Adjust the color as needed */
-    color: #333; /* Adjust the text color as needed */
+    background-color: #f0f0f0; 
+    color: #333; 
   }
   #sigin:hover{
-    background-color: #f0f0f0; /* Adjust the color as needed */
+    background-color: #f0f0f0; 
     color: #333;
   }
   
   
   
   .navbar-nav {
-    flex-direction: column; /* Make links vertical in expanded state */
+    flex-direction: column; 
    text-align: center;
-   background-image: linear-gradient(to right, #007bff, #66bbff); /* Ajusta los colores según tu logo */
+   background-image: linear-gradient(to right, #007bff, #66bbff); 
    background-size: cover;
   
   }
