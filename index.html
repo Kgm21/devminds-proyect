@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>devminds Proyect</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <style>
+        
+    </style>
 </head>
-
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg bg-black border-bottom border-body text-light" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand m-3 p-2" href="./index.html">
-                <img src="./assets/img/WhatsApp Image 2024-11-05 at 8.21.18 PM.jpeg" alt="Logo" width="100px">
-            </a>
-
-            <!-- Botones Sign Up y Login en pantallas pequeñas -->
-            <div class="d-flex gap-2 order-lg-2">
-                
-                <a href="#" role="button">
-                    <img src="./assets/icons/icons8-carrito-de-compras-52.png" alt="Carrito" width="30px">
-                </a>
-            </div>
-
-            <!-- Botón de colapso -->
-            <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menú colapsable -->
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
+        <nav class="navbar">
+            <div class="container-fluid p-0 justify-content-between">
+                <a class="navbar-brand logo mx-4" href="#"><img src="./assets/img/DevMinds_logo_pngColor.png" alt=""width="150px" ></a>
+                <div class="d-flex align-items-center p-0">
+                  <button type="button" class="btn  me-2 " id="login">Login in</button>
+                  <button type="button" class="btn  me-2 " id="sigin">Sign in</button>
+                  <button class="btn btn-link navbar-toggler menu ml-4 mx-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+             
+              
+              <div class="collapse navbar-collapse menu_desplegable m-0 mt-1 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-3 mb-lg-0 align-items-center">
+                  <form class="d-flex mt-2 " role="search">
+                    <input class="sombra form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                    <button class="sombra btn btn-secondary rounded-pill" type="submit">BUSCAR</button>
+                  </form>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">INICIO</a>
+                  </li>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">CARRITO DE COMPRAS</a>
+                  </li>
+                  <li class="nav-item p-2 w-25">
+                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">SOBRE NOSOTROS</a>
+                  </li>
                 </ul>
-                <a class="btn btn-dark rounded-pill" href="./pages/signup.html" role="button">Sign Up</a>
-                <a class="btn btn-dark rounded-pill " href="./pages/login.html" role="button">Login</a>
-
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+               
+              </div>
             </div>
-        </div>
-    </nav>
-</header>
-
+          </nav>
+    </header>
     <main>
-        <h1>DevMinds</h1>
-       
+        <section>
+            <h1>DevMinds</h1>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="bg-black text-white text-center">
+        <section class="container-fluid p-4">
+            <section class="row py-4">
+                <div class="col-12 col-lg-3 mb-4">
+                    <h5>DIRECCIÓN</h5>
+                    <p>Av. Colón 3950, Túcuman, Argentina.</p>
+                </div>
+                <div class="col-12 col-lg-3 mb-4">
+                    <h5>HORARIOS DE ATENCIÓN</h5>
+                    <p>Lunes a Viernes: 08:30 a 19:00 hs.</p>
+                    <p>Sábados: 9:00 a 13:00 hs y 16:00 a 19:00 hs.</p>
+                </div>
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>CONTACTO</h5>
+                            <p>0810-888-62478</p>
+                        </div>
+                        <div class="col-12">
+                            <h5>¡SEGUINOS!</h5>
+                            <!-- Social media icons -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-4">
+                    <img src="./assets/img/DevMinds Short.jpg" alt="logo blanco footer" width="200px" />
+                </div>
+            </section>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
