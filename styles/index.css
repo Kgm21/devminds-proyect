@@ -7,27 +7,32 @@ main {
 }
 
 
-  .menu_desplegable{
-    background-image: url(../assets/img/Gemini_Generated_Image_qeg0e4qeg0e4qeg0.jpeg);
-    
-  }
-  nav {
-    width: 100%;
+  
+  body{
     margin: 0;
-    padding: 0;
-  }
-  .dropdown-menu {
-    width: 100%;
-  }
-  .navbar-toggler {
-    border: none;
-    padding: 0;
-    margin-right: 2rem;
+    height: 100vh;
   }
   
-  .navbar-toggler-icon {
-    font-size: 20px; /* Ajusta el tamaño del icono según tus preferencias */
-  }
+
+  
+  .navbar-toggler {
+    border: none; /* Elimina el borde del botón */
+    background-color: transparent; /* Hace el fondo transparente */
+    outline: none; /* Elimina el borde de enfoque */
+    box-shadow: none; /* Elimina cualquier sombra */
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.navbar-toggler-icon {
+    font-size: 15px; /* Ajusta el tamaño del icono */
+    background-color: transparent; /* Asegura que el fondo del icono sea transparente */
+    border: none; /* Elimina cualquier borde en el icono */
+}
+.navbar-toggler:focus {
+  outline: none; /* Elimina el borde de enfoque cuando está seleccionado */
+  box-shadow: none; /* Elimina cualquier sombra de enfoque */
+}
   
   .logo{
     margin-left: 2rem;
@@ -52,9 +57,7 @@ main {
   
   }
   
-  .navbar-nav .nav-link {
-    margin-bottom: 5px;
-  }
+  
   .sombra {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);;
   }
