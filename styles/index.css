@@ -63,6 +63,7 @@ header .container {
   background: rgba(0, 0, 0, 0.4); 
 }
 
+
 /* Estilos para enlaces de la navbar */
 .navbar-nav .nav-link {
   color: white !important;
@@ -73,7 +74,7 @@ header .container {
 .navbar-nav .nav-link:hover {
  color:black !important;
   background-color: aliceblue;
-  border-radius: 20px;
+  
 }
 
 /* Estilos para los botones de login y sign up */
@@ -86,6 +87,20 @@ header .container {
   background-color:aqua;
   color: #333;
 }
+.button-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2em;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0rem;
+}
+.button-container {
+  margin-left: 0.5rem; /* Ajusta el valor según necesites */
+}
+
 
 
 @media (max-width: 767px) {
@@ -100,10 +115,17 @@ header .container {
   .navbar-nav .nav-link {
     margin-right: 0;
     margin-bottom: 0.5rem;
+    border-radius: 10px;
   }
 
   .navbar-nav .form-control {
     width: 80%;
     margin: 0 auto;
   }
+  .nav-item{
+    margin-top: 10px;
+    margin-right: 2rem;
+   
+  }
+  
 }
