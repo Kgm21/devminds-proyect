@@ -15,7 +15,7 @@ body, html {
 /* Estilos del header */
 header {
   position: relative;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
 }
@@ -32,6 +32,10 @@ header {
   z-index: 0;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.text-header{
+  line-height:2;
 }
 
 /* Overlay para oscurecer el video */
@@ -64,68 +68,56 @@ header .container {
 }
 
 
-/* Estilos para enlaces de la navbar */
-.navbar-nav .nav-link {
-  color: white !important;
-  margin-right: 1rem;
-  transition: color 0.3s;
-}
 
-.navbar-nav .nav-link:hover {
- color:black !important;
-  background-color: aliceblue;
-  
-}
 
-/* Estilos para los botones de login y sign up */
-#login, #signin {
-  border-radius: 50px;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-#login:hover, #signin:hover {
-  background-color:aqua;
-  color: #333;
-}
+
+
+
 .button-icon {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   font-size: 1.2em;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0rem;
+
+ 
 }
 .button-container {
-  margin-left: 0.5rem; /* Ajusta el valor según necesites */
+  margin-left: 0.5rem; 
 }
 
 
 
 @media (max-width: 767px) {
   .navbar {
-    background: rgba(0, 0, 0, 0.9); 
+    background: red; 
+    justify-content: center;
   }
 
-  .navbar-nav {
+  .nav-item{
+    justify-content: center;
+  }
+  /*.navbar-nav {
     text-align: center;
-  }
+  }*/
 
-  .navbar-nav .nav-link {
+ /* .navbar-nav .nav-link {
     margin-right: 0;
     margin-bottom: 0.5rem;
     border-radius: 10px;
-  }
+  }*/
 
-  .navbar-nav .form-control {
+  /*.navbar-nav .form-control {
     width: 80%;
     margin: 0 auto;
-  }
-  .nav-item{
+  }*/
+  /*.nav-item{
     margin-top: 10px;
     margin-right: 2rem;
-   
-  }
+    justify-content: center;
+  }*/
   
 }
