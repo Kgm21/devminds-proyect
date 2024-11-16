@@ -175,18 +175,22 @@ header {
   width: 50vh;
   
    }
+   .carousel img{
+   
+    height: 100vh;
+   }
   
   .section1 {
   
-   margin-top: 0 !important; /* Elimina margen superior */
+   margin-top: 20px!important; 
   
   padding-top: 0 !important;
   
-   }
+   }}
   
   
   
-    }
+   
   
    @media (min-width: 1200px) {
   
