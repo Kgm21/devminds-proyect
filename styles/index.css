@@ -125,13 +125,13 @@ header {
 @media (min-width: 992px) {
   .collapse:not(.show) {
       display: none;
-  }}
+  }
+}
 
   @media (max-width: 767px) {
     .navbar {
       background-color: black;
-     
-    }
+     }
    
    #nav-icon{
       justify-content: center;
@@ -139,8 +139,21 @@ header {
    .nav-link:hover {
    
     width: 50vh;
+    }
    
-  }
   
   }
 
+  /*main*/
+  main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-caption {
+    /* Estilos básicos para todas las pantallas */
+    color: #fff;
+    text-align: center;
+  }
