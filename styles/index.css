@@ -64,13 +64,21 @@ header {
 /* Barra de navegación */
 .navbar {
   z-index: 3; 
-  background: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: antiquewhite;
+ }
+
  
-}
 .container-buttons{
   justify-content: end;
 }
-
+.nav-link:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+  color: black;
+  border-radius: 20px;
+  width: 100vh;
+  text-align: center;
+}
 
 .button-icon {
   width: 32px;
@@ -80,25 +88,59 @@ header {
   padding: 0;
   display: flex; 
 }
+.button-menu{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  padding: 0;
+}
 .button-container {
   margin-left: 0.5rem; 
 }
+
 .button-icon:hover{
   transform: scale(1.2); 
   cursor: pointer;
 }
 
 
-@media (max-width: 767px) {
-  .navbar {
-    background-color: black;
-   
-  }
- 
- #nav-icon{
-    justify-content: center;
- }
+
+.navbar-toggler {
+  display: block;
 }
 
   
+.collapse.show {
+  display: block !important;
+  color: white;
+  
+}
+.button-menu:focus,
+.button-menu:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .collapse:not(.show) {
+      display: none;
+  }}
+
+  @media (max-width: 767px) {
+    .navbar {
+      background-color: black;
+     
+    }
+   
+   #nav-icon{
+      justify-content: center;
+   }
+   .nav-link:hover {
+   
+    width: 50vh;
+   
+  }
+  
+  }
 
