@@ -132,6 +132,9 @@ header {
       background-color: black;
      
     }
+    .img-logo{
+      margin-top: 20px;
+    }
    
    #nav-icon{
       justify-content: center;
