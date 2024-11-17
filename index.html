@@ -12,90 +12,78 @@
     </style>
 </head>
 <body>
-    <header>
+  <header>
       
-       <!-- Video de fondo -->
-    <video playsinline autoplay muted loop id="bg-video">
-      <source src="./assets/video/DevMinds-HomeVideo004.mp4" type="video/mp4">
-      Tu navegador no soporta el elemento de video.
-    </video>
+    <!-- Video de fondo -->
+ <video playsinline autoplay muted loop id="bg-video">
+   <source src="./assets/video/DevMinds-HomeVideo004.mp4" type="video/mp4">
+   Tu navegador no soporta el elemento de video.
+ </video>
 
-    <!-- Overlay para oscurecer el video y mejorar la visibilidad del contenido -->
-    <div class="overlay"></div>
+ <!-- Overlay para oscurecer el video y mejorar la visibilidad del contenido -->
+ <div class="overlay"></div>
 
-    <!-- Contenido del encabezado -->
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center justify-content-center">
-        <div class="w-100 text-white  text-center">
-          <img src="./assets/img/DevMinds_logo_pngColor.png" alt="" width="350" >
-          <div class="mt-5 text-header">
-            <p class="lead mb-0 ">Creatividad y codigo para su presencia online perfecta</p>
-            <p class="lead mb-0 ">CREATIVITY AND CODE FOR YOUR PERFECT ONLINE PRESENCE</p>
-            <p>Transformamos ideas en SOLUCIONES digitales</p>
-        </div>
-       <a href="#"> <img src="./assets/img/svg_icon_01_facebook.svg" alt="Icono Facebook" class="img-fluid" width="38" height="38"></a>
-        <a href="#"><img src="./assets/img/svg_icon_02_instagram.svg" alt="Icono Instagram" class="img-fluid" width="38" height="38"></a>
-        </div>
-      </div>
-    </div>
+ <!-- Contenido del encabezado -->
+ <div class="container h-100">
+   <div class="d-flex h-100 text-center align-items-center justify-content-center">
+     <div class="w-100 text-white  text-center">
+       <img src="./assets/img/DevMinds_logo_pngColor.png" alt="" width="350" >
+       <div class="mt-5 text-header">
+         <p class="lead mb-0 ">Creatividad y codigo para su presencia online perfecta</p>
+         <p class="lead mb-0 ">CREATIVITY AND CODE FOR YOUR PERFECT ONLINE PRESENCE</p>
+         <p>Transformamos ideas en SOLUCIONES digitales</p>
+     </div>
+    <a href="#"> <img src="./assets/img/svg_icon_01_facebook.svg" alt="Icono Facebook" class="img-fluid" width="38" height="38"></a>
+     <a href="#"><img src="./assets/img/svg_icon_02_instagram.svg" alt="Icono Instagram" class="img-fluid" width="38" height="38"></a>
+     </div>
+   </div>
+ </div>
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+ <!-- Barra de navegación -->
+ <nav class="navbar navbar-dark fixed-top">
+ <div class="container-fluid d-flex" id="nav-icon">
+     <!-- Logo de la marca -->
+     <a class="navbar-brand mx-5 justify-content-start" href="./index.html">
+         <img src="./assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+     </a>
 
-   
-      <div class="container-fluid d-flex  ">
-        <!-- Logo de la marca -->
-        <a class="navbar-brand  mx-5" href="./index.html">
-            <img src="./assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
-        </a>
-    
-        
-        <div class="d-flex  nav-item ">
-          <div class="button-container">
-            <a href="./pages/carrito.html" class="btn  me-2 button-icon "  type="button"> <img src="./assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" width="38" height="38"></a>
-          </div>
-          
-           <div class="button-container">
-              <form class="d-flex align-items-center ms-auto " role="search">
-                <a href="#" class="btn  me-2 button-icon "  type="button"> <img src="./assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid" width="38" height="38"></a>
-              </form>
-            </div>
-            <div class="button-container">
-              <a href="#" class="btn  me-2 button-icon "  type="button"> </a>
-            </div>
-            <div class="button-container">
-              <a href="#" class="btn  me-2 button-icon "  type="button"> <img src="./assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid" width="38" height="38"></a>
-            </div>
-           
-       
-        <button class="btn btn-link navbar-toggler ms-3 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-  </div>
+     <!-- Botones e íconos -->
+     <div class="d-flex container-buttons align-items-center">
+         <a href="./pages/carrito.html" class="btn me-2 button-icon" type="button">
+             <img src="./assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" >
+         </a>
+         <form class="d-flex align-items-center ms-auto" role="search">
+           <a href="#" class="btn me-2 button-icon" type="button">
+               <img src="./assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+           </a>
+       </form>
+         <a href="#" class="btn me-2 button-icon" type="button">
+             <img src="./assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+         </a>
 
-    </div>
-    
-      
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-            </li>
-            
-          </ul>
-        </div>
-        
-      </div>
-    </nav>
-   
-    </header>
+         <!-- Botón del menú (funciona en todas las pantallas) -->
+         <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon button-icon"></span>
+         </button>
+     </div>
+ </div>
+
+ <!-- Opciones de navegación (colapsable) -->
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+       <li class="nav-item">
+           <a class="nav-link" href="./index.html">INICIO</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+       </li>
+   </ul>
+</div>
+</nav>
+</header>
     <main>
         <section>
             <h1>DevMinds</h1>
