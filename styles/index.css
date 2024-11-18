@@ -261,7 +261,7 @@ header {
   .section1 {
     
     text-align: center; 
-    background-color: #f0f0f0; 
+    background: linear-gradient(to right,#2196F3,#4CAF50 );
     padding: 50px; 
     margin: 0;
   }
@@ -274,7 +274,7 @@ header {
   
   .text-s1{
     font-size: 18px;
-    color: #666;
+    color: antiquewhite;
     line-height: 1.5;
   }
   
@@ -289,7 +289,7 @@ header {
     align-items: unset;
    }
   .section2 {
-    background: linear-gradient(180deg,#666, #2d3436); 
+    background-color: #465B75;
     color: white; 
     padding: 50px 0;
   }
