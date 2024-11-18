@@ -154,7 +154,7 @@ header {
   
   
   
-  @media(min-width:320px) and (max-width: 767px) {
+  @media(min-width:300px) and (max-width: 767px) {
   
  .navbar {
   
@@ -162,7 +162,7 @@ header {
   
   }
   .img-logo{
-    margin-top: 80px;
+    margin-top:3.5rem;
   }
 
   
@@ -186,7 +186,20 @@ header {
   
   .section1 {
      margin: 0;
-   }}
+   }
+   .login-section {
+    height: auto; 
+    padding: 20px; 
+  }
+
+  .login-container {
+    width: 95%; 
+    max-width: 100%; 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  }
   
   
   
@@ -272,9 +285,9 @@ header {
   }
   .container-section2{
     display: flex;
-  justify-content: unset;
-  align-items: unset;
-  }
+    justify-content: unset;
+    align-items: unset;
+   }
   .section2 {
     background: linear-gradient(180deg,#666, #2d3436); 
     color: white; 
@@ -314,5 +327,57 @@ header {
     margin-bottom: 15px;
     
     margin: 0 auto;
+  }
+  
+  /*seccion vip*/
+
+  .login-section {
+    height: 100vh;
+    background: linear-gradient(90deg, #0077ff, #00d9a7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-container {
+    width: 80%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  
+  .illustration {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+ 
+  .texto-vip {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    color: white;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+  }
+  
+
+  .btn-primary {
+    background-color: #0077ff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005bbb;
   }
   
