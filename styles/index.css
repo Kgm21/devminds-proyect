@@ -1,88 +1,146 @@
-body{
+/* Resetear márgenes y padding */
+* {
   margin: 0;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  
-/*header*/ 
+/* Estilo general del cuerpo */
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del header */
 header {
-  height: 80vh;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.text-header{
+  line-height:2;
+}
+
+/* Overlay para oscurecer el video */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-  .navbar-toggler {
-    border: none; 
-    background-color: transparent; 
-    outline: none; 
-    box-shadow: none; 
-    padding: 0;
-    margin-right: 1rem;
+
+/* Contenido del header */
+ .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-.navbar-toggler-icon {
-    font-size: 15px; 
-    background-color: transparent; 
-    border: none; 
+/* Barra de navegación */
+.navbar {
+  z-index: 3; 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: antiquewhite;
+ }
+
+ 
+.container-buttons{
+  justify-content: end;
 }
-.navbar-toggler:focus {
-  outline: none; 
-  box-shadow: none; 
+.nav-link:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+  color: black;
+  border-radius: 20px;
+  width: 100vh;
+  text-align: center;
 }
+
+.button-icon {
+  width: 32px;
+  height: 32px;
   
-  .logo{
-   
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
+ font-size: 1.2em;
+  padding: 0;
+  display: flex; 
+}
+.button-menu{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  padding: 0;
+}
+.button-container {
+  margin-left: 0.5rem; 
+}
+
+.button-icon:hover{
+  transform: scale(1.2); 
+  cursor: pointer;
+}
+
+
+
+.navbar-toggler {
+  display: block;
+}
+
   
-  #login:hover {
-    background-color: #f0f0f0; 
-    color: #333; 
-  }
-  #sigin:hover{
-    background-color: #f0f0f0; 
-    color: #333;
-  }
+.collapse.show {
+  display: block !important;
+  color: white;
   
-  
-  
-  .navbar-nav {
-    flex-direction: column; 
-   text-align: center;
-   background-image: linear-gradient(to right, #007bff, #66bbff); 
-   background-size: cover;
-  
-  }
-  
-  
-  .sombra {
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);;
-  }
-  
-  .cambios:hover {
-    background-color: #cfcfcf;
-    
-  }
+}
+.button-menu:focus,
+.button-menu:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .collapse:not(.show) {
+      display: none;
+  }}
+
   @media (max-width: 767px) {
+    .navbar {
+      background-color: black;
+     
+    }
+   
+   #nav-icon{
+      justify-content: center;
+   }
+   .nav-link:hover {
+   
+    width: 50vh;
+   
+  }
   
-    .navbar-toggler {
-      margin-right: 1rem; /* Agrega margen al botón de menú */
-    }
-    header {
-        position: fixed; 
-        top: 0;
-        left: 0;
-        width: 100%;
-        
-      
-    }
-}
+  }
 
-/*main*/
-main {
-  height: 100vh;
-}
-
-h1{
-  margin-top: 20px
-}

@@ -13,41 +13,78 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container-fluid p-0 justify-content-between">
-                <a class="navbar-brand logo mx-4" href="#"><img src="./assets/img/DevMinds_logo_pngColor.png" alt=""width="150px" ></a>
-                <div class="d-flex align-items-center p-0">
-                  <button type="button" class="btn  me-2 " id="login">Login in</button>
-                  <button type="button" class="btn  me-2 " id="sigin">Sign in</button>
-                  <button class="btn btn-link navbar-toggler menu ml-4 mx-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-             
-              
-              <div class="collapse navbar-collapse menu_desplegable m-0 mt-1 " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-3 mb-lg-0 align-items-center">
-                  <form class="d-flex mt-2 " role="search">
-                    <input class="sombra form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                    <button class="sombra btn btn-secondary rounded-pill" type="submit">BUSCAR</button>
-                  </form>
-                  <li class="nav-item p-2 w-25">
-                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">INICIO</a>
-                  </li>
-                  <li class="nav-item p-2 w-25">
-                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">PRODUCTOS</a>
-                  </li>
-                  <li class="nav-item p-2 w-25">
-                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">CARRITO DE COMPRAS</a>
-                  </li>
-                  <li class="nav-item p-2 w-25">
-                    <a class="cambios nav-link link-nav text-dark rounded-pill" href="./pages/error404.html">SOBRE NOSOTROS</a>
-                  </li>
-                </ul>
-               
-              </div>
-            </div>
-          </nav>
+      
+       <!-- Video de fondo -->
+    <video playsinline autoplay muted loop id="bg-video">
+      <source src="./assets/video/DevMinds-HomeVideo004.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- Overlay para oscurecer el video y mejorar la visibilidad del contenido -->
+    <div class="overlay"></div>
+
+    <!-- Contenido del encabezado -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center justify-content-center">
+        <div class="w-100 text-white  text-center">
+          <img src="./assets/img/DevMinds_logo_pngColor.png" alt="" width="350" >
+          <div class="mt-5 text-header">
+            <p class="lead mb-0 ">Creatividad y codigo para su presencia online perfecta</p>
+            <p class="lead mb-0 ">CREATIVITY AND CODE FOR YOUR PERFECT ONLINE PRESENCE</p>
+            <p>Transformamos ideas en SOLUCIONES digitales</p>
+        </div>
+       <a href="#"> <img src="./assets/img/svg_icon_01_facebook.svg" alt="Icono Facebook" class="img-fluid" width="38" height="38"></a>
+        <a href="#"><img src="./assets/img/svg_icon_02_instagram.svg" alt="Icono Instagram" class="img-fluid" width="38" height="38"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-dark fixed-top">
+    <div class="container-fluid d-flex" id="nav-icon">
+        <!-- Logo de la marca -->
+        <a class="navbar-brand mx-5 justify-content-start" href="./index.html">
+            <img src="./assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+        </a>
+
+        <!-- Botones e íconos -->
+        <div class="d-flex container-buttons align-items-center">
+            <a href="./pages/carrito.html" class="btn me-2 button-icon" type="button">
+                <img src="./assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" >
+            </a>
+            <form class="d-flex align-items-center ms-auto" role="search">
+              <a href="#" class="btn me-2 button-icon" type="button">
+                  <img src="./assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+              </a>
+          </form>
+            <a href="#" class="btn me-2 button-icon" type="button">
+                <img src="./assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+            </a>
+
+            <!-- Botón del menú (funciona en todas las pantallas) -->
+            <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon button-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Opciones de navegación (colapsable) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+              <a class="nav-link" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+   
     </header>
     <main>
         <section>
