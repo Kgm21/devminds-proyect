@@ -73,7 +73,7 @@ header {
   justify-content: end;
 }
 .nav-link:hover {
-  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #f0f0f0; 
   color: black;
   border-radius: 20px;
   width: 100vh;
@@ -106,12 +106,14 @@ header {
 
 
 .navbar-toggler {
-  display: block;
+  display: block !important ;
 }
-
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
   
 .collapse.show {
-  display: block !important;
+  display: block ;
   color: white;
   
 }
@@ -122,7 +124,7 @@ header {
   border: none;
 }
 
-@media(min-width: 768px) and (max-width: 1199px) {
+@media(min-width: 992px) {
 
    .collapse:not(.show) {
   
@@ -152,14 +154,16 @@ header {
   
   
   
-  @media (max-width: 767px) {
+  @media(min-width:320px) and (max-width: 767px) {
   
  .navbar {
   
    background-color: black;
   
   }
-  
+  .img-logo{
+    margin-top: 80px;
+  }
 
   
   #nav-icon{
@@ -192,7 +196,7 @@ header {
   
    .section1 {
   
-   margin-top: 50px; /* Espacio generoso para pantallas grandes */
+   margin-top: 50px; 
   
   }
   
@@ -224,7 +228,12 @@ header {
   color: #fff;
   
   text-align: center;
+ 
   
+  }
+
+  .carousel-caption p{
+    justify-content: center;
   }
   
   
