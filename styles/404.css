@@ -1,7 +1,11 @@
 /* Página de error */
+.fondi{
+  background: linear-gradient(to right, #2146b7, #17e8c0)
+}
 .error-page {
     text-align: center;
     margin-top: 50px;
+    background: linear-gradient(to right, #2146b7, #17e8c0)
   }
   
   .error-page h1 {
