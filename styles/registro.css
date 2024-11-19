@@ -14,39 +14,18 @@
   /* Estilos del header */
   header {
     position: relative;
-    height: 90vh;
+    height: 20vh;
     width: 100%;
     overflow: hidden;
   }
   
-  /* Video de fondo */
-  #bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-  }
+ 
   
   .text-header{
     line-height:2;
   }
   
-  /* Overlay para oscurecer el video */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
+ 
   
   /* Contenido del header */
    .container {
@@ -134,20 +113,7 @@
     height: 600px;
     
     }
-    
-    .carousel-item img {
-    
-    max-height: 500px;
-    
-    }
-    
-    
-    .section1 {
-    
-     margin-top: 5px;
-     justify-content: center;
-    
-     }}
+  }
     
     
     
@@ -173,13 +139,7 @@
     
     width: 50vh;
     
-     }
-    
-    
-    
-    
-    
-    }
+     }}
     
      @media (min-width: 1200px) {
     
