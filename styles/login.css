@@ -7,47 +7,24 @@
   
   /* Estilo general del cuerpo */
   body, html {
-    height: 100%;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    font-family: Arial, sans-serif;
+   
   }
   
   /* Estilos del header */
   header {
     position: relative;
-    height: 90vh;
     width: 100%;
     overflow: hidden;
-  }
-  
-  /* Video de fondo */
-  #bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
   }
   
   .text-header{
     line-height:2;
   }
   
-  /* Overlay para oscurecer el video */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
+ 
   
   /* Contenido del header */
    .container {
@@ -64,7 +41,7 @@
   /* Barra de navegación */
   .navbar {
     z-index: 3; 
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     color: antiquewhite;
    }
   
@@ -129,27 +106,31 @@
      display: none;
     
      }
-    
-     .carousel {
-    
-    height: 600px;
+     .login-container {
+   
+      padding: 20px;
+      background-color: #fff; 
+      height: 50%;
+      margin-top: 120px;
+  
+  }
+  
+  
+  .login-section {
+    display: flex;
+      flex-direction: column; /* Columnas para pantallas pequeñas */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Ajusta los elementos si hay desbordes */
+    padding: 10px; /* Reduce el espacio externo */
+}
+   
+     
     
     }
     
-    .carousel-item img {
     
-    max-height: 500px;
-    
-    }
-    
-    
-    .section1 {
-    
-     margin-top: 5px;
-     justify-content: center;
-    
-     }}
-    
+   
     
     
     @media (max-width: 767px) {
@@ -160,78 +141,130 @@
     
     }
     
-  
-    
     #nav-icon{
     
-     justify-content: center;
+      justify-content: center;
     
     }
     
     .nav-link:hover {
     
-    
-    
-    width: 50vh;
+      width: 50vh;
     
      }
-    
-    .section1 {
-    
-     margin-top: 0 !important; /* Elimina margen superior */
-    
-    padding-top: 0 !important;
-    
-     }
-    
+     body, html {
+      width: 100%;
+      overflow-x: hidden; /* Elimina el desbordamiento horizontal */
+    }
+  
+    .login-container {
+   
+      padding: 20px;
+      background-color: #fff; 
+      height: 50%;
+      margin-top: 120px;
+  
+  }
+  
+  
+.login-section {
+  display: flex;
+  flex-direction: column; /* Columnas para pantallas pequeñas */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ajusta los elementos si hay desbordes */
+  padding: 10px; /* Reduce el espacio externo */
+}
+     
     }
     
      @media (min-width: 1200px) {
+      .login-section {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 30px; 
+        
+      }
     
-     .section1 {
-    
-     margin-top: 50px; /* Espacio generoso para pantallas grandes */
-    
-    }
-    
-  }
+      .login-container {
+        width: 100%; 
+        margin-top: 100px;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
+  
+        .login-container h2 {
+          max-width: 100%; 
+        }
+       
+      }
+      
+      
     
     /*main*/
     
-     main {
+    main {
+  
+      position:relative;
+      
+      width: 100%;
+      
+      overflow: hidden;}
     
-    position:static;
-    
-    width: 100%;
-    
-    overflow: hidden;
-    
-    }
-    
-     .carousel {
-    
-    height: 500px; 
-    
-    }
-    
-    
-    
-    .carousel-caption {
-    
-     /* Estilos básicos para todas las pantallas */
-    
-    color: #fff;
-    
-    text-align: center;
-    
-    }
-    
-    
-    
-    .carousel-item img {
-    
-    max-height: 500px; 
-    
-    object-fit: cover;
-    
-    }
+      .login-section {
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        background: url('../assets/img/DevMinds_LogIn_background.jpg') no-repeat center center / cover;
+        padding: 20px;
+  
+  }
+      
+      .login-container {
+        max-width: 400px;
+       background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      
+      
+      
+      /* Estilo de los campos del formulario */
+      .form-control {
+        width: 100%;
+        padding: 12px;
+        margin: 15px 0;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem; 
+        background: rgba(255, 255, 255, 0.9);
+      }
+      
+      .form-control:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 119, 255, 0.6);
+      }
+      
+      .btn-primary {
+        width: 100%;
+        padding: 12px;
+        background-color: #0077ff;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      
+      .btn-primary:hover {
+        background-color: #005bbb;
+      }
+      
+      .enlace {
+        color: #0077ff;
+        text-decoration: none;
+      }
+      
+      .enlace:hover {
+        text-decoration: underline;
+      }
