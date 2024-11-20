@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>devminds Proyect</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-        
-    <link rel="stylesheet" href="./styles/index.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>devminds Proyect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Íconos Font Awesome -->
+
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <style>
+    .custom-footer {
+      height: 450px;
+      /* Altura de 500px */
+      background-image: url("./assets/img/DevMinds_footerBack_00.jpg");
+      color: white;
+      /* Texto blanco */
+      display: flex;
+      align-items: center;
+      /* Alinear contenido verticalmente */
+    }
+
+    .footer-logo img {
+      max-width: 100%;
+      height: auto;
+      max-height: 150px;
+      /* Tamaño máximo para el logo */
+    }
+
+    .social-icons a {
+      color: white;
+      margin-right: 10px;
+      font-size: 32px;
+      /* Tamaño de los íconos */
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #16e8c1;
+    }
+
+    .carousel-item {
+      height: 500px;
+      /* Altura fija para el carrusel */
+      position: relative;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .carousel-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .carousel-overlay i {
+      font-size: 50px;
+      /* Tamaño del ícono */
+    }
+
+    .carousel-overlay p {
+      margin-top: 10px;
+      font-size: 20px;
+      /* Tamaño del texto */
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-      
-       <!-- Video de fondo -->
+  <header>
+
+    <!-- Video de fondo -->
     <video playsinline autoplay muted loop id="bg-video">
       <source src="./assets/video/DevMinds-HomeVideo004.mp4" type="video/mp4">
       Tu navegador no soporta el elemento de video.
@@ -26,14 +99,18 @@
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center justify-content-center">
         <div class="w-100 text-white  text-center">
-          <img src="./assets/img/DevMinds_logo_pngColor.png" alt="" width="350" class="img-logo">
+          <img src="./assets/img/DevMinds_logo_pngColor.png" alt="" width="500" class="img-logo">
           <div class="mt-5 text-header">
-            <p class="lead mb-0 ">Creatividad y codigo para su presencia online perfecta</p>
-            <p class="lead mb-0 ">CREATIVITY AND CODE FOR YOUR PERFECT ONLINE PRESENCE</p>
-            <p>Transformamos ideas en SOLUCIONES digitales</p>
-        </div>
-       <a href="#"> <img src="./assets/img/svg_icon_01_facebook.svg" alt="Icono Facebook" class="img-fluid" width="38" height="38"></a>
-        <a href="#"><img src="./assets/img/svg_icon_02_instagram.svg" alt="Icono Instagram" class="img-fluid" width="38" height="38"></a>
+            <h1 class="mb-2">Creatividad y Código para su presencia online perfecta</h1>
+            <h5 class="mb-3" style="color:#00a5ff" ;>CREATIVITY AND CODE FOR YOUR PERFECT ONLINE PRESENCE</h5>
+            <h3>Transformamos ideas en SOLUCIONES digitales</h3>
+          </div>
+          <div class="p-5">
+            <a href="#"> <img src="./assets/img/svg_icon_01_facebook.svg" alt="Icono Facebook" class="img-fluid"
+                width="50" height="50"></a>
+            <a href="#"><img src="./assets/img/svg_icon_02_instagram.svg" alt="Icono Instagram" class="img-fluid"
+                width="50" height="50"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -41,234 +118,252 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-dark fixed-top">
       <div class="container-fluid d-flex" id="nav-icon">
-          <!-- Logo de la marca -->
-          <a class="navbar-brand mx-5 justify-content-start" href="./index.html">
-              <img src="./assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+        <!-- Logo de la marca -->
+        <a class="navbar-brand mx-5 justify-content-start" href="./index.html">
+          <img src="./assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+        </a>
+
+        <!-- Botones e íconos -->
+        <div class="d-flex container-buttons align-items-center">
+          <a href="./pages/carrito.html" class="btn me-2 button-icon" type="button">
+            <img src="./assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid">
           </a>
-  
-          <!-- Botones e íconos -->
-          <div class="d-flex container-buttons align-items-center">
-              <a href="./pages/carrito.html" class="btn me-2 button-icon" type="button">
-                  <img src="./assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" >
-              </a>
-              <form class="d-flex align-items-center ms-auto" role="search">
-                <a href="#" class="btn me-2 button-icon" type="button">
-                    <img src="./assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
-                </a>
-            </form>
-              <a href="#" class="btn me-2 button-icon" type="button">
-                  <img src="./assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
-              </a>
-  
-              
-              <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon button-icon"></span>
-              </button>
-          </div>
+          <form class="d-flex align-items-center ms-auto" role="search">
+            <a href="#" class="btn me-2 button-icon" type="button">
+              <img src="./assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+            </a>
+          </form>
+          <a href="#" class="btn me-2 button-icon" type="button">
+            <img src="./assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+          </a>
+
+
+          <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon button-icon"></span>
+          </button>
+        </div>
       </div>
-  
+
       <!-- Opciones de navegación (colapsable) -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       
+
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+          </li>
         </ul>
-    </div>
-  </nav>
-</header>
-    <main>
-         
-          <div id="carouselExampleCaptions" class="carousel slide ">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner ">
-              <div class="carousel-item active ">
-                <img src="./assets/img/DevMinds_home_imgSlider001.jpg" class="d-block w-100 " alt="..." >
-                <div class="carousel-caption ">
-                  
-                  <p>Innovacion en cada proyecto resultados en cada estrategia</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/DevMinds_home_imgSlider002.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur quis, totam suscipit cupiditate nam mollitia autem et tempora deserunt ratione voluptatum, dolorem placeat ut repellat porro ducimus sequi doloremque.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/DevMinds_home_imgSlider003.jpg" class="d-block w-100 " alt="...">
-                <div class="carousel-caption ">
-                 
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam repellendus iure pariatur animi tempora perferendis deserunt, distinctio voluptas, tempore ad maxime libero nostrum dicta doloremque! Voluptatem quis labore sed accusantium!</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/DevMinds_home_imgSlider004.jpg" class="d-block w-100 " alt="...">
-                <div class="carousel-caption ">
-                
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis perspiciatis provident consectetur quae reprehenderit quasi molestiae dolorum vel voluptatum tempore magni voluptatibus, dolore impedit, facere, ipsam soluta ipsum dolor. Exercitationem.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+
+    <!-- NUEVO CARRUSEL -->
+
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="./assets/img/DevMinds_home_imgSlider001.jpg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-overlay">
+            <i class="fab fa-html5 h1"></i>
+            <p>Ofrecemos servicios de desarrollo de aplicaciones profesionales, diseñadas a medida para potenciar tu
+              negocio. Creamos soluciones intuitivas, eficientes y compatibles con múltiples plataformas, integrando
+              tecnología avanzada. Nuestro enfoque garantiza aplicaciones escalables, seguras y alineadas con tus
+              objetivos empresariales.</p>
           </div>
-          
-          <section class="section1 max-height: 500px">
-            <div class="text-center">
-                <p class="text-s1 ">Ofrecemos servicios en</p>
-                <h2>Diseño, Programación y Publicación de Websites + Mobile APPs Android · IOS</h2>
-                <p class="text-s1">Somos una empresa Argentina desarrollando websites y apps moviles a nivel internacional desde 2020</p>
-                <img src="./assets/img/DevMinds_Graf_Coderman.png" alt="imagen persona desarrollando" class="img-personadesarrollando">
-            </div>
-        </section>
-        <section class="section2">
-            <h3 class="text-center mt-5">Nuestros procesos de trabajo son metodologías profesionales aplicables y escalables</h3>
-            <div class="container-section2 text-center ">
-              <div class="row justify-content-center mt-5">
-                <div class="col-md-3 col-12 mb-4">
-                 <a href="./pages/productos.html" class="card-link" style="text-decoration: none;">
-                  <div class="card">
-                    <img src="./assets/icons/DevMinds_iconoCARDS_01.png" alt="Icono 1" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title"> Desarrollo de Webs</h5>
-                      <p class="card-text">Ayudamos a dar forma a tus ideas y convertirlas en soluciones reales.</p>
-                    </div>
-                  </div>
-                </a>
-                </div>
-                <div class="col-md-3 col-12 mb-4">
-                <a href="./pages/productos.html" class="card-link" style="text-decoration: none;">
-                  <div class="card">
-                    <img src="./assets/icons/DevMinds_iconoCARDS_02.png" alt="Icono 2" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title">Desarrollo de Apps </h5>
-                      <p class="card-text">Nos encargamos de publicar tus apps o sitios en las plataformas adecuadas.</p>
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div class="col-md-3 col-12 mb-4">
-                    <a href="./pages/error404.html" class="card-link" style="text-decoration: none;">
-                  <div class="card">
-                    <img src="./assets/icons/DevMinds_iconoCARDS_03.png" alt="Icono 3" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title">Nuevas Tecnologías al día</h5>
-                      <p class="card-text">Usamos las herramientas más modernas para garantizar calidad.</p>
-                    </div>
-                  </div>
-                </a>
-                </div>
-                <div class="col-md-3 col-12 mb-4">
-                    <a href="./pages/error404.html" class="card-link" style="text-decoration: none;">
-                  <div class="card ">
-                    <img src="./assets/icons/DevMinds_iconoCARDS_04.png" alt="Icono 4" class="card-img-top" />
-                    <div class="card-body">
-                      <h5 class="card-title">Inteligencia Artificial</h5>
-                      <p class="card-text">Incorporamos inteligencia artificial en proyectos personalizados.</p>
-                    </div>
-                  </div>
-                </div>
-                </a>
-              </div>
-            </div>
-          </section>
-          
-       
-      <section class="login-section d-flex justify-content-center align-items-center">
-        <div class="login-container row">
-          <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <img
-              src="./assets/img/DevMinds_Graf_FormClientesVip.png"
-              alt="Ilustración de inicio de sesión"
-              class="illustration"/>
-          </div>
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h2 class="text-center texto-vip">Sección Clientes Exclusivos DevMinds</h2>
-            <form>
-              <div class="mb-3">
-                <label for="email" class="form-label">Ingrese su Email:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="example@domain.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Ingrese su Contraseña:</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="********"
-                />
-              </div>
-              <div class="form-check mb-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="rememberMe"
-                />
-                <label class="form-check-label" for="rememberMe">Recordar sesión</label>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-            </form>
-            </div>
         </div>
-      </section>
-    </main>
-    <footer class="bg-black text-white text-center">
-        <section class="container-fluid p-4">
-            <section class="row py-4">
-                <div class="col-12 col-lg-3 mb-4">
-                    <h5>DIRECCIÓN</h5>
-                    <p>Av. Colón 3950, Tucumán, Argentina.</p>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="./assets/img/DevMinds_home_imgSlider002.jpg" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-overlay">
+            <i class="fab fa-css3 h1"></i>
+            <p>Ofrecemos servicios profesionales de diseño web, creando sitios modernos, funcionales y adaptados a tus
+              necesidades. Diseñamos experiencias visuales atractivas y optimizadas para todos los dispositivos,
+              garantizando navegación intuitiva. Nuestro enfoque combina creatividad, tecnología y estrategia para
+              destacar tu presencia en línea.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="./assets/img/DevMinds_home_imgSlider003.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-overlay">
+            <i class="fas fa-code h1"></i>
+            <p>Ofrecemos servicios profesionales de programación de sistemas, desarrollando soluciones robustas y
+              personalizadas para optimizar procesos empresariales. Diseñamos y programamos sistemas escalables, seguros
+              y de alto rendimiento, adaptados a tus objetivos específicos. Nuestra experiencia garantiza eficiencia y
+              soporte continuo en cada proyecto.</p>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img src="./assets/img/DevMinds_home_imgSlider004.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-overlay">
+            <i class="far fa-grin-alt h1"></i>
+            <p>Somos una empresa líder en diseño y desarrollo web y de aplicaciones, ofreciendo soluciones innovadoras
+              que destacan en el mercado nacional e internacional. Combinamos tecnología avanzada, creatividad y
+              estrategia para crear productos funcionales, escalables y visualmente impactantes. Nuestro compromiso es
+              impulsar el éxito digital de nuestros clientes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <section class="section1 max-height: 500px">
+      <div class="text-center">
+        <h2 class="text-s1 ">Ofrecemos servicios en</h2>
+        <h2>Diseño, Programación y Publicación de Websites + Mobile APPs Android · IOS</h2>
+        <p class="text-s1">Somos una empresa Argentina desarrollando websites y apps moviles a nivel internacional desde
+          2020</p>
+        <img src="./assets/img/DevMinds_Graf_Coderman.png" alt="imagen persona desarrollando"
+          class="img-personadesarrollando">
+      </div>
+    </section>
+    <section class="section2">
+      <h3 class="text-center mt-5">Nuestros procesos de trabajo son metodologías profesionales aplicables y escalables
+      </h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-3 col-12 mb-4">
+            <a href="./pages/productos.html" class="card-link" style="text-decoration: none;">
+              <div class="card">
+                <img src="./assets/icons/DevMinds_iconoCARDS_01.png" alt="Icono 1" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title text-white"> Desarrollo de Webs</h5>
+                  <p class="card-text">Ayudamos a dar forma a tus ideas y convertirlas en soluciones reales.</p>
                 </div>
-                <div class="col-12 col-lg-3 mb-4">
-                    <h5>HORARIOS DE ATENCIÓN</h5>
-                    <p>Lunes a Viernes: 08:30 a 19:00 hs.</p>
-                    <p>Sábados: 9:00 a 13:00 hs y 16:00 a 19:00 hs.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-12 mb-4">
+            <a href="./pages/productos.html" class="card-link" style="text-decoration: none;">
+              <div class="card">
+                <img src="./assets/icons/DevMinds_iconoCARDS_02.png" alt="Icono 2" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Desarrollo de Apps </h5>
+                  <p class="card-text">Nos encargamos de publicar tus apps o sitios en las plataformas adecuadas.</p>
                 </div>
-                <div class="col-12 col-lg-3 mb-4">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>CONTACTO</h5>
-                            <p>0810-888-62478</p>
-                        </div>
-                        <div class="col-12">
-                            <h5>¡SEGUINOS!</h5>
-                            <!-- Social media icons -->
-                        </div>
-                    </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-12 mb-4">
+            <a href="./pages/error404.html" class="card-link" style="text-decoration: none;">
+              <div class="card">
+                <img src="./assets/icons/DevMinds_iconoCARDS_03.png" alt="Icono 3" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Nuevas Tecnologías</h5>
+                  <p class="card-text">Usamos las herramientas más modernas para garantizar calidad.</p>
                 </div>
-                <div class="col-12 col-lg-3 mb-4">
-                    <img src="./assets/img/DevMinds Short.jpg" alt="logo blanco footer" width="200px" />
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-12 mb-4">
+            <a href="./pages/error404.html" class="card-link" style="text-decoration: none;">
+              <div class="card ">
+                <img src="./assets/icons/DevMinds_iconoCARDS_04.png" alt="Icono 4" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Inteligencia Artificial</h5>
+                  <p class="card-text">Incorporamos inteligencia artificial en proyectos personalizados.</p>
                 </div>
-            </section>
-        </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+              </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="login-section d-flex justify-content-center align-items-center">
+      <div class="login-container row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="./assets/img/DevMinds_Graf_FormClientesVip.png" alt="Ilustración de inicio de sesión"
+            class="illustration" />
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h2 class="text-center texto-vip">Sección Clientes Exclusivos DevMinds</h2>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Ingrese su Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="example@domain.com" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Ingrese su Contraseña:</label>
+              <input type="password" class="form-control" id="password" placeholder="********" />
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="rememberMe" />
+              <label class="form-check-label" for="rememberMe">Recordar sesión</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Primera columna -->
+        <div class="col-md-4">
+          <h4 style="color: #10bdda;">Acerca de DevMinds</h4>
+          <p>Somos una empresa dedicada a ofrecer soluciones digitales innovadoras para todo tipo de clientes.
+            Nuestro compromiso es la excelencia.</p>
+        </div>
+        <!-- Segunda columna -->
+        <div class="col-md-4">
+          <h4 style="color: #10bdda;">Contacto</h4>
+          <ul class="list-unstyled">
+            <li>Email: contacto@devminds.com</li>
+            <li>Teléfono: +54 9387 4633661</li>
+            <li>Dirección: Calle Los Pinos 8 Of C, Ciudad de Salta, Argentina</li>
+          </ul>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Tercera columna (Logo) -->
+        <div class="col-md-4 text-center footer-logo">
+          <img src="./assets/img/DevMinds_logo_pngBlanco.png" width="350px" alt="Logo DevMinds">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
 </body>
+
 </html>

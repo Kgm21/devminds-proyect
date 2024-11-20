@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMinds Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Íconos Font Awesome -->
+    <link rel="stylesheet" href="../styles/productos.css">
+    <style>
+        .custom-footer {
+            height: 450px;
+            /* Altura de 500px */
+            background-image: url("../assets/img/DevMinds_footerBack_00.jpg");
+            color: white;
+            /* Texto blanco */
+            display: flex;
+            align-items: center;
+            /* Alinear contenido verticalmente */
+        }
+
+        .footer-logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 150px;
+            /* Tamaño máximo para el logo */
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 10px;
+            font-size: 32px;
+            /* Tamaño de los íconos */
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #16e8c1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="custom-container">
+            <img src="../assets/img/DevMinds_logo_pngColor.png" alt="" width="400" class="mt-3">
+            <h3 class="mt-3">DevMinds · Nuestros Servicios y Productos</h3>
+            <h5 class="mt-1">Diseño, Programación y Publicación de Websites + Mobile APPs Android · iOS</h5>
+        </div>
+
+
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid d-flex" id="nav-icon">
+                <!-- Logo de la marca -->
+                <a class="navbar-brand mx-5 justify-content-start" href="../index.html">
+                    <img src="../assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+                </a>
+
+                <!-- Botones e íconos -->
+                <div class="d-flex container-buttons align-items-center">
+                    <a href="../pages/carrito.html" class="btn me-2 button-icon" type="button">
+                        <img src="../assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid">
+                    </a>
+                    <form class="d-flex align-items-center ms-auto" role="search">
+                        <a href="#" class="btn me-2 button-icon" type="button">
+                            <img src="../assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+                        </a>
+                    </form>
+                    <a href="#" class="btn me-2 button-icon" type="button">
+                        <img src="../assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+                    </a>
+
+
+                    <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon button-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Opciones de navegación (colapsable) -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    </header>
+
+    <main>
+
+        <!-- Cards DESARROLLO APPs en grid (6) -->
+        <h2 class="text-center text-danger">Servicios DevMinds · Categoría Desarrollo Apps</h2>
+
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- Card 1 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_001.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Prototipado de Apps</h5>
+                            <p class="card-text">Ofrecemos inicialmente realizar el diseño de las pantallas principales
+                                del FLOW de la APP para validar el proyecto antes de comenzar a programar.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_002.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Apps Mobile integradas a Sistemas</h5>
+                            <p class="card-text">Integramos soluciones Mobile para Android e iOS a su sistema. Controle
+                                su empresa y reciba notificaciones en todo momento / lugar. Notificaciones eficientes.
+                            </p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_003.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Apss de Alta Complejidad</h5>
+                            <p class="card-text">Desarrollamos retails masivos, ecommerce B2B, plataformas simil Glovo,
+                                Uber, MercadoLibre, PedidosYA, Redes Sociales a medida, Sucursales Virtuales, etc.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_004B.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Desarrollo y Seguimiento</h5>
+                            <p class="card-text">Desarrollamos la APP utilizándo la última tecnología y aplicando metodologías ágiles que involucran al cliente (product owner) en el seguimiento y validación de los avances.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_005.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Acceso Web</h5>
+                            <p class="card-text">Si busca un desarrollo único multiplataforma, somos el socio IT
+                                ideal. Además de la versión instalable, integramos la versión WEB de la APP para que
+                                pueda ser utilizada desde el Browser.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_006.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Publicación y Distribución</h5>
+                            <p class="card-text">Nos encargamos de todo el proceso de puesta en producción para que la
+                                APP esté disponible en los markets (App Store y GooglePlay) o de la distribución ad-hoc.
+                            </p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Cards DISEÑO WEB en grid (6) -->
+        <h2 class="text-center text-warning">Servicios DevMinds · Categoría Diseño Web</h2>
+
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- Card 1 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_004.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Diseño y Flow UX/UI</h5>
+                            <p class="card-text">Nuestro equipo de diseñadores y maquetadores especialistas en interfaces Mobile, se enfocarán en lograr la mejor experiencia para los usuarios de la APP.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_007.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Diseño Web HTML5 + Responsive</h5>
+                            <p class="card-text">Nuestros sitios web son desarrollados mediante últimas tecnologías. Lo que garantiza tu sitio siempre visible y desde cualquier dispositivo.
+                                Tu marca online: 24 x 7!</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_008.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">100% de Compatibilidad</h5>
+                            <p class="card-text">Empleamos técnicas crossbrowser, para que nuestros Sitios Web se visualicen en todos los navegadores existentes y no pierdas clientes que buscan tu producto / servicio.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_009.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Websites Optimizados</h5>
+                            <p class="card-text">Utilizamos diferentes métodos de optimización de recursos para el diseño de tu página web. Lo que dá como resultado la carga veloz del sitio, y el mejor posicionamiento en Google.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_010.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Diseño Personalizado + Estilo</h5>
+                            <p class="card-text">Diseñamos tu website con el estilo que diferencia a tu marca. Además realizamos un análisis previo, donde nos encargamos de sentar las pautas de un branding exitoso.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="container my-2">
+                    <div class="card text-white" style="background-color: rgb(63, 63, 63); border: none;">
+                        <!-- Imagen en la parte superior -->
+                        <img src="../assets/img/DevMinds_products_011.jpg" class="card-img-top" alt="Imagen">
+                        <!-- Contenido de la card -->
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#10bdda">Tu Website integrado y Conectado</h5>
+                            <p class="card-text">Enlazamos en el diseño de tu Página Web, las redes sociales de tu marca, como Facebook, Instagram, Linkedin, entre otras, de tal manera estarás siempre conectado con tus clientes.</p>
+                            <a href="#" class="btn btn-light">Consultar con Asesor</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="custom-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Primera columna -->
+                <div class="col-md-4">
+                    <h4 style="color: #10bdda;">Acerca de DevMinds</h4>
+                    <p>Somos una empresa dedicada a ofrecer soluciones digitales innovadoras para todo tipo de clientes.
+                        Nuestro compromiso es la excelencia.</p>
+                </div>
+                <!-- Segunda columna -->
+                <div class="col-md-4">
+                    <h4 style="color: #10bdda;">Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li>Email: contacto@devminds.com</li>
+                        <li>Teléfono: +54 9387 4633661</li>
+                        <li>Dirección: Calle Los Pinos 8 Of C, Ciudad de Salta, Argentina</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Tercera columna (Logo) -->
+                <div class="col-md-4 text-center footer-logo">
+                    <img src="../assets/img/DevMinds_logo_pngBlanco.png" width="350px" alt="Logo DevMinds">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
