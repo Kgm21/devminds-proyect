@@ -9,19 +9,21 @@
     margin: 0;
     padding: 0;
     width: 100%;
-  
-   
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
   }
   
   /* Estilos del header */
-  header {
-    
-    position: relative;
-    top: 0;
-  left: 0;
-  width: 100%;
- 
-  }
+  
+    header {
+        height: 70px; /* Ajusta a lo que necesitas */
+       margin-bottom: 0;
+        position: relative;
+        z-index: 10;
+    }
+
+
   
   .text-header{
     line-height:2;
@@ -109,40 +111,14 @@
      display: none;
     
      }
-     .form-container {
-   
-      padding: 20px;
-      background-color: #fff; 
-      height: 20vh;
-      
-  
-  }
-  
-  
-  .container-login {
-    display: flex;
-    
-    flex-wrap: wrap; 
-    padding: 10px; 
-  }
-  .form-container {
-   
-    padding: 20px;
-    background-color: #fff; 
-    height: 50%;
-    
-}
-main{
+     
+    main{
     flex-direction: column; 
     align-items: center;
     justify-content: center;
   }
-  body, html {
-    width: 100%;
+}
     
-  }
-    
-    }
     
     
    
@@ -166,55 +142,21 @@ main{
     
       width: 50vh;
     
-     }}
+     }
+     .product-photo {
+        width: 50px; /* Tamaño reducido en pantallas pequeñas */
+        height: 50px;
+      }
+     
+    }
      
   
-    /*.form-container {
    
-      padding: 5px;
-      background-color: #fff; 
-      margin-top:20px;
-      
-    }
-    main{
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;
-      margin-top: 0;
-      z-index: 4;
-    }
-  
-  .container-login {
-    display: flex;
-    flex-wrap: wrap; 
-     padding: 10px; 
-
-}*/
      
     
     
      @media (min-width: 1200px) {}
-      /*.container-login{
-        flex-direction: column; 
-        align-items: center; 
-        padding: 30px; 
-      
-        
-        
-      }
-    
-      .form-container {
-        width: 100%; 
-        margin-top: 15%;
-        padding: 20px;
-      }
-  
-        .form-container h2 {
-          max-width: 100%; 
-        }
-       
-      }*/
-      
+     
       
     
     /*main*/
@@ -222,59 +164,20 @@ main{
     main {
         position:relative;
       width: 100%;
- 
-      
-      
-    }
-    
-      .container-login {
-        width: 100%; 
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(to right,#2196F3,#4CAF50 );
-        padding: 20px;
-  
-  }
-      
-      .form-container {
-        max-width: 400px;
-       background: rgba(255, 255, 255, 0.9);
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      
-      }
-      
-      
-      
-      /* Estilo de los campos del formulario */
-      .form-control {
-        width: 100%;
-        padding: 12px;
-        margin: 15px 0;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem; 
-        background: rgba(255, 255, 255, 0.9);
-      }
-      
-      .form-control:focus {
-        outline: none;
-        box-shadow: 0 0 5px rgba(0, 119, 255, 0.6);
-      }
-      
-      .btn-primary {
-        width: 100%;
-        padding: 12px;
-        background-color: #0077ff;
-        border: none;
-        border-radius: 8px;
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-      }
-      
-      .btn-primary:hover {
-        background-color: #005bbb;
-      }
-      
-      
+      background: linear-gradient(to right,#2196F3,#4CAF50 );
+      margin-top: 0;
+ }
+
+
+.product-photo {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  margin: 1rem;
+  border: 1px solid #ddd; /* Add a border for separation */
+}
+
+.product-photo img {
+  width: 100%; /* Ensure images fill the container */
+  height: 100%; /* Ensure images fill the container */
+  object-fit: cover; /* Crop or contain images within the container */
+}
