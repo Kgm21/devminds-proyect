@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/404.css">
+</head>
+<body>
+  <body>
+    <header>
+
+
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-dark fixed-top bg-black">
+            <div class="container-fluid d-flex" id="nav-icon">
+                <!-- Logo de la marca -->
+                <a class="navbar-brand mx-5 justify-content-start" href="../index.html">
+                    <img src="../assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+                </a>
+
+                <!-- Botones e íconos -->
+                <div class="d-flex container-buttons align-items-center">
+                    <a href="../pages/carrito.html" class="btn me-2 button-icon" type="button">
+                        <img src="../assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid">
+                    </a>
+                    <form class="d-flex align-items-center ms-auto" role="search">
+                        <a href="#" class="btn me-2 button-icon" type="button">
+                            <img src="../assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+                        </a>
+                    </form>
+                    <a href="#" class="btn me-2 button-icon" type="button">
+                        <img src="../assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+                    </a>
+
+
+                    <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon button-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Opciones de navegación (colapsable) -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <main class="error-page text-center d-flex flex-column align-items-center justify-content-center vh-100">
+    <h1 class="display-4 text-white">La página que busca no se ha encontrado.</h1>
+    <div class="error-code-svg my-4">
+        <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" class="w-100" style="max-width: 300px;">
+            <defs>
+                <linearGradient id="gradient" gradientTransform="rotate(45)">
+                    <stop offset="0%" stop-color="#0096c7" />
+                    <stop offset="100%" stop-color="#80e1f2" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" text-anchor="middle" fill="url(#gradient)" font-size="150" font-weight="bold" dy=".35em">
+                404
+            </text>
+        </svg>
+    </div>
+    <p class="text-white">Lamentamos las molestias.</p>
+    <div class="search-bar">
+        <a href="../index.html" class="btn btn-primary">Volver a casa</a>
+    </div>
+</main>
+<footer class="custom-footer bg-black  ">
+  <div class="container ">
+      <div class="row my-4 p-2">
+          <!-- Primera columna -->
+          <div class="col-md-4">
+              <h4 style="color: #10bdda;">Acerca de DevMinds</h4>
+              <p>Somos una empresa dedicada a ofrecer soluciones digitales innovadoras para todo tipo de clientes.
+                  Nuestro compromiso es la excelencia.</p>
+          </div>
+          <!-- Segunda columna -->
+          <div class="col-md-4">
+              <h4 style="color: #10bdda;">Contacto</h4>
+              <ul class="list-unstyled">
+                  <li>Email: contacto@devminds.com</li>
+                  <li>Teléfono: +54 9387 4633661</li>
+                  <li>Dirección: Calle Los Pinos 8 Of C, Ciudad de Salta, Argentina</li>
+              </ul>
+              <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+
+          <!-- Tercera columna (Logo) -->
+          <div class="col-md-4 text-center footer-logo">
+              <img src="../assets/img/DevMinds_logo_pngBlanco.png" width="350px" alt="Logo DevMinds">
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

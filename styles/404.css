@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+main{
+  background: url(../assets/img/DevMinds_Erro404_Backimg_00.jpg);
+}
+
+
+/* Estilo general del cuerpo */
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos del header */
+header {
+  position: relative;
+  
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.text-header {
+  line-height: 2;
+}
+
+/* Overlay para oscurecer el video */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Contenido del header */
+.container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.custom-container {
+  width: 100%; /* Ocupa todo el ancho */
+  height: 40vh; /* 40% de la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vh;
+  background: linear-gradient(to right, #2146b7, #17e8c0); /* Degradado de azul a turquesa */
+  color: white; /* Color del texto */
+}
+
+/* Barra de navegación */
+.navbar {
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.404);
+  color: antiquewhite;
+}
+
+
+.container-buttons {
+  justify-content: end;
+}
+
+.nav-link:hover {
+  background-color: #00a6ff73;
+  color: black;
+  border-radius: 20px;
+  width: 100vh;
+  text-align: center;
+}
+
+.button-icon {
+  width: 32px;
+  height: 32px;
+
+  font-size: 1.2em;
+  padding: 0;
+  display: flex;
+}
+
+.button-menu {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  padding: 0;
+}
+
+.button-container {
+  margin-left: 0.5rem;
+}
+
+.button-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+
+.navbar-toggler {
+  display: block !important;
+}
+
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+
+.collapse.show {
+  display: block;
+  color: white;
+
+}
+
+.button-menu:focus,
+.button-menu:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media(min-width: 992px) {
+
+  .collapse:not(.show) {
+
+    display: none;
+
+  }
+
+  
+
+
+  .section1 {
+
+    margin-top: 5px;
+    justify-content: center;
+
+  }
+}
+
+
+
+@media(min-width:300px) and (max-width: 767px) {
+
+  .navbar {
+
+    background-color: black;
+
+  }
+
+  .img-logo {
+    margin-top: 3.5rem;
+  }
+
+
+  #nav-icon {
+
+    justify-content: center;
+
+  }
+
+  .nav-link:hover {
+
+
+
+    width: 50vh;
+
+  }
+
+  .carousel-item {
+    height: 200px;
+  }
+
+  .carousel-overlay {
+    display: none;
+  }
+  .section1 {
+    margin: 0;
+  }
+
+  .login-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .login-container {
+    width: 95%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .content{
+    width: 70%;
+  }
+  .img-logo{
+   width: 90%;
+  }
+  
+
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+
+  .section1 {
+
+    margin-top: 50px;
+
+  }
+   .content{
+    margin-top: 6.5rem;
+   }
+  
+  }
+.error-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .error-page h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .error-code {
+    font-size: 100px;
+    font-weight: bold;
+    color: #0096c7;
+    background: linear-gradient(135deg, #0096c7, #80e1f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .error-page p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
