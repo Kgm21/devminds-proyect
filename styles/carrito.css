@@ -1,0 +1,35 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+.producto{
+    background-color:burlywood;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+.fondo-carrito{
+
+    background: linear-gradient(to right, #2146b7, #17e8c0)
+}
+
+
+.table {
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        text-align: center;
+    }
+
+   
+    img {
+        display: none;
+    }
+}
+
