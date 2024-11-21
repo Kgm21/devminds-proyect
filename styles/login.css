@@ -1,0 +1,270 @@
+/* Resetear márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general del cuerpo */
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+  }
+  
+  /* Estilos del header */
+  header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .text-header{
+    line-height:2;
+  }
+  
+ 
+  
+  /* Contenido del header */
+   .container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    z-index: 3; 
+    background-color: black;
+    color: antiquewhite;
+   }
+  
+   
+  .container-buttons{
+    justify-content: end;
+  }
+  .nav-link:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse */
+    color: black;
+    border-radius: 20px;
+    width: 100vh;
+    text-align: center;
+  }
+  
+  .button-icon {
+    width: 32px;
+    height: 32px;
+    
+   font-size: 1.2em;
+    padding: 0;
+    display: flex; 
+  }
+  .button-menu{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    padding: 0;
+  }
+  .button-container {
+    margin-left: 0.5rem; 
+  }
+  
+  .button-icon:hover{
+    transform: scale(1.2); 
+    cursor: pointer;
+  }
+  
+  
+  
+  .navbar-toggler {
+    display: block;
+  }
+  
+    
+  .collapse.show {
+    display: block !important;
+    color: white;
+    
+  }
+  .button-menu:focus,
+  .button-menu:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  @media(min-width: 768px) and (max-width: 1199px) {
+  
+     .collapse:not(.show) {
+    
+     display: none;
+    
+     }
+     .login-container {
+   
+      padding: 20px;
+      background-color: #fff; 
+      height: 50%;
+      margin-top: 120px;
+  
+  }
+  
+  
+  .login-section {
+    display: flex;
+      flex-direction: column; /* Columnas para pantallas pequeñas */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Ajusta los elementos si hay desbordes */
+    padding: 10px; /* Reduce el espacio externo */
+}
+   
+     
+    
+    }
+    
+    
+   
+    
+    
+    @media (max-width: 767px) {
+    
+   .navbar {
+    
+     background-color: black;
+    
+    }
+    
+    #nav-icon{
+    
+      justify-content: center;
+    
+    }
+    
+    .nav-link:hover {
+    
+      width: 50vh;
+    
+     }
+     body, html {
+      width: 100%;
+      overflow-x: hidden; /* Elimina el desbordamiento horizontal */
+    }
+  
+    .login-container {
+   
+      padding: 20px;
+      background-color: #fff; 
+      height: 50%;
+      margin-top: 120px;
+  
+  }
+  
+  
+.login-section {
+  display: flex;
+  flex-direction: column; /* Columnas para pantallas pequeñas */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ajusta los elementos si hay desbordes */
+  padding: 10px; /* Reduce el espacio externo */
+}
+     
+    }
+    
+     @media (min-width: 1200px) {
+      .login-section {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 30px; 
+        
+      }
+    
+      .login-container {
+        width: 100%; 
+        margin-top: 100px;
+        margin-bottom: 10px;
+        padding: 20px;
+      }
+  
+        .login-container h2 {
+          max-width: 100%; 
+        }
+       
+      }
+      
+      
+    
+    /*main*/
+    
+    main {
+  
+      position:relative;
+      
+      width: 100%;
+      
+      overflow: hidden;}
+    
+      .login-section {
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        background: url('../assets/img/DevMinds_LogIn_background.jpg') no-repeat center center / cover;
+        padding: 20px;
+  
+  }
+      
+      .login-container {
+        max-width: 400px;
+       background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      
+      
+      
+      /* Estilo de los campos del formulario */
+      .form-control {
+        width: 100%;
+        padding: 12px;
+        margin: 15px 0;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem; 
+        background: rgba(255, 255, 255, 0.9);
+      }
+      
+      .form-control:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 119, 255, 0.6);
+      }
+      
+      .btn-primary {
+        width: 100%;
+        padding: 12px;
+        background-color: #0077ff;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      
+      .btn-primary:hover {
+        background-color: #005bbb;
+      }
+      
+      .enlace {
+        color: #0077ff;
+        text-decoration: none;
+      }
+      
+      .enlace:hover {
+        text-decoration: underline;
+      }

@@ -5,27 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inicio de Sesión</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
-<body>  
-    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <img src="./assets/img/DevMinds_logo_pngBlanco.png" alt="" class="img-fluid me-5">
-        <div class="card">
-            <div class="card-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                    <a href="#" class="btn btn-outline-primary">Iniciar Sesión con Google</a>
-                </form>
-            </div>
-        </div>
+<body>
+    <header>
+      
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-dark fixed-top">
+     <div class="container-fluid d-flex" id="nav-icon">
+         <!-- Logo de la marca -->
+         <a class="navbar-brand mx-5 justify-content-start" href="../index.html">
+             <img src="../assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+         </a>
+    
+         <!-- Botones e íconos -->
+         <div class="d-flex container-buttons align-items-center">
+             <a href="carrito.html" class="btn me-2 button-icon" type="button">
+                 <img src="../assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" >
+             </a>
+             <form class="d-flex align-items-center ms-auto" role="search">
+               <a href="#" class="btn me-2 button-icon" type="button">
+                   <img src="../assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+               </a>
+           </form>
+             <a href="#" class="btn me-2 button-icon" type="button">
+                 <img src="../assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+             </a>
+    
+             <!-- Botón del menú (funciona en todas las pantallas) -->
+             <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon button-icon"></span>
+             </button>
+         </div>
+     </div>
+    
+     <!-- Opciones de navegación (colapsable) -->
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+           <li class="nav-item">
+               <a class="nav-link" href="../index.html">INICIO</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="nosotros.html">SOBRE NOSOTROS</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="productos.html">PRODUCTOS</a>
+           </li>
+       </ul>
     </div>
+    </nav>
+    </header>
+   <main>
+    <section class="login-section">
+        <div class="login-container ">
+          <h2 class="text-center ">Iniciar Sesión</h2>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Ingrese su Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="example@domain.com" />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Ingrese su Contraseña:</label>
+              <input type="password" class="form-control" id="password" placeholder="********" />
+            </div>
+            <h4>No tenes cuenta? <a href="./sign.html" class="enlace">Registrese aquí</a></h4>
+            <div class="form-check mb-3 mt-4 text-start">
+              <input class="form-check-input" type="checkbox" id="rememberMe" />
+              <label class="form-check-label" for="rememberMe">Recordar sesión</label>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+              <p class="mb-2 mt-2 text-center">Ó</p>
+              <button type="submit" class="btn btn-secondary w-100">Continuar con Google</button>
+            </div>
+            <div class="mt-3 text-center">
+              <a href="./error404.html" class="enlace">Olvidé su contraseña</a>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+   </main>
+    <footer class="bg-black text-white text-center">
+        <section class="container-fluid p-4">
+            <section class="row py-4">
+                <div class="col-12 col-lg-3 mb-4">
+                    <h5>DIRECCIÓN</h5>
+                    <p>Av. Colón 3950, Túcuman, Argentina.</p>
+                </div>
+                <div class="col-12 col-lg-3 mb-4">
+                    <h5>HORARIOS DE ATENCIÓN</h5>
+                    <p>Lunes a Viernes: 08:30 a 19:00 hs.</p>
+                    <p>Sábados: 9:00 a 13:00 hs y 16:00 a 19:00 hs.</p>
+                </div>
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>CONTACTO</h5>
+                            <p>0810-888-62478</p>
+                        </div>
+                        <div class="col-12">
+                            <h5>¡SEGUINOS!</h5>
+                            <!-- Social media icons -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-4">
+                    <img src="../assets/img/DevMinds Short.jpg" alt="logo blanco footer" width="200px" />
+                </div>
+            </section>
+        </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
