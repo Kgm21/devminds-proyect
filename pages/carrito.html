@@ -3,115 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <title>Formulario de Inicio de Sesión</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet " href="../styles/carrito.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/carrito.css">
 
 </head>
-<body class="fondo-carrito">
-    <nav class="bg-black ">
-        <div class="container-fluid d-flex" id="nav-icon">
-            <!-- Logo de la marca -->
-            <a class="navbar-brand mx-5 justify-content-start" href="./index.html">
-                <img src="../assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
-            </a>
+<body>
+    <header>
+      
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+     <div class="container-fluid d-flex" id="nav-icon">
+         <!-- Logo de la marca -->
+         <a class="navbar-brand mx-5 justify-content-start" href="../index.html">
+             <img src="../assets/img/DevMinds_logo_pngBlanco.png" alt="DevMinds Logo" width="170">
+         </a>
     
-            <!-- Botones e íconos -->
-            <div class="d-flex container-buttons align-items-center">
-                <a href="./pages/carrito.html" class="btn me-2 button-icon" type="button">
-                    <img src="../assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" > 
-                </a>
-                <form class="d-flex align-items-center ms-auto" role="search">
-                  <a href="#" class="btn me-2 button-icon" type="button">
-                      <img src="../assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
-                  </a>
-              </form>
-                <a href="./pages/login.html-" class="btn me-2 button-icon" type="button">
-                    <img src="../assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
-                </a>
+         <!-- Botones e íconos -->
+         <div class="d-flex container-buttons align-items-center">
+             <a href="carrito.html" class="btn me-2 button-icon" type="button">
+                 <img src="../assets/img/svg_icon_05_cart.svg" alt="Icono carrito" class="img-fluid" >
+             </a>
+             <form class="d-flex align-items-center ms-auto" role="search">
+               <a href="error404.html" class="btn me-2 button-icon" type="button">
+                   <img src="../assets/img/svg_icon_04_search.svg" alt="Icono search" class="img-fluid">
+               </a>
+           </form>
+             <a href="login.html" class="btn me-2 button-icon" type="button">
+                 <img src="../assets/img/svg_icon_03_user.svg" alt="Icono user" class="img-fluid">
+             </a>
     
-                <!-- Botón del menú (funciona en todas las pantallas) -->
-                <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon button-icon"></span>
-                </button>
-            </div>
-        </div>
+             <!-- Botón del menú (funciona en todas las pantallas) -->
+             <button class="btn btn-link navbar-toggler  button-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon button-icon"></span>
+             </button>
+         </div>
+     </div>
     
-        <!-- Opciones de navegación (colapsable) -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-              <li class="nav-item">
-                  <a class="nav-link" href="./index.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-              </li>
-          </ul>
-      </div>
+     <!-- Opciones de navegación (colapsable) -->
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+           <li class="nav-item">
+               <a class="nav-link" href="../index.html">INICIO</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="error404.html">SOBRE NOSOTROS</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="productos.html">PRODUCTOS</a>
+           </li>
+       </ul>
+    </div>
     </nav>
-    <section class="producto py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Carrito de Compras <i class="bi bi-cart3"></i></h2>
-    
-            <!-- Tabla de productos -->
-            <div class="table-responsive">
-                <table class="table table-striped align-middle text-center">
-                    <thead class="table-dark">
-                        <tr>
-                            <th scope="col">Producto</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col">Quitar Producto</th>
-                            <th scope="col">Total del Carrito</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img src="https://via.placeholder.com/50" alt="Producto" class="img-fluid rounded">
-                                <br>
-                                Producto 1
-                            </td>
-                            <td>$483.000</td>
-                            <td>
-                                <button class="btn btn-danger btn-sm">
-                                    <i class="bi bi-trash"></i> Eliminar
-                                </button>
-                            </td>
-                            <td rowspan="2" class="align-middle">
-                                <strong>$3.183.000</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="https://via.placeholder.com/50" alt="Producto" class="img-fluid rounded">
-                                <br>
-                                Desarrollo de Página Web
-                            </td>
-                            <td>$2.700.000</td>
-                            <td>
-                                <button class="btn btn-danger btn-sm">
-                                    <i class="bi bi-trash"></i> Eliminar
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    </header>
+   
+    <main class="container-fluid  pt-3 justify-content-center">
+        <h1 class="text-center mb-4 fw-bold mt-5">Tu Carrito de Compras</h1>
+      
+        <div class="row justify-content-center">
+          <div class="col-10 container-table">
+            <div class="d-flex flex-column align-items-start">
+              <!-- Producto 1 -->
+              <div class="d-flex justify-content-between align-items-center w-100 mb-3 p-3 border rounded shadow-sm">
+                <div class="d-flex align-items-center">
+                  <img src="../assets/img/DevMinds_products_007.jpg" alt="Producto" class="img-fluid product-photo" style="max-width: 80px; border-radius: 5px;">
+                  <div class="ms-3">
+                    <h5 class="fw-bold text-white text-center">Desarrollo Web</h5>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <input type="number" class="form-control quantity-input text-center" value="1" min="1" style="max-width: 60px;">
+                </div>
+                
+                <div class="text-center text-white fw-bold" style="max-width: 100px;">
+                  $2.000.000
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-outline-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </button>
+                </div>
+              </div>
             </div>
-    
-            <!-- Botones -->
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary me-2">
-                    <i class="bi bi-arrow-left"></i> Seguir Comprando
-                </a>
-                <button class="btn btn-success">
-                    <i class="bi bi-check-circle"></i> Finalizar Compra
-                </button>
-            </div>
+          </div>
         </div>
-    </section>
+      
+        <div class="text-center my-4">
+          <a href="../index.html">
+            <button class="btn btn-primary">Seguir Comprando</button>
+          </a>
+          <a href="../pages/error404.html">
+            <button class="btn btn-success">Finalizar Compra</button>
+          </a>
+        </div>
+      </main>
+      
+      
     
     <footer class="bg-black text-white text-center">
         <section class="container-fluid p-4">
